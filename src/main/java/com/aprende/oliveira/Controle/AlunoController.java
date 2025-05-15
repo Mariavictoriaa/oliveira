@@ -17,7 +17,7 @@ public class AlunoController {
     }
     @GetMapping
     public List<Aluno> buscarAlunos(){
-        return service.ListaAluno()
+        return service.ListaAluno();
     }
     @PostMapping
     public Aluno salvarAluno(@RequestBody Aluno novoAluno){
