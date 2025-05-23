@@ -1,4 +1,24 @@
-document.addEventListener('DOMContentLoaded', () => {
+  
+  
+  // Primeira NavBar
+import { Collapse, initMDB } from "mdb-ui-kit";
+initMDB({ Collapse });
+  
+  
+  
+  
+  
+  // Segunda NavBar
+import { Dropdown, Collapse, initMDB } from "mdb-ui-kit";
+initMDB({ Dropdown, Collapse });
+  
+  
+  
+  
+  
+  
+  // chamada da API Aluno  
+  document.addEventListener('DOMContentLoaded', () => {
   fetch('http://localhost:8080/alunos')
     .then(response => response.json())
     .then(data => {
